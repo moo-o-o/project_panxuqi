@@ -1,0 +1,28 @@
+<!-- custom_seekbar.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <!-- Secondary progress (buffering progress) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#FFFFFF"/> <!-- 半透明颜色 -->
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Progress -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#77FFFFFF"/> <!-- 进度条的颜色 -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

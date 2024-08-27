@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="登录账号"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/dodgerblue"
+            android:background="@android:color/transparent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="2dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_corner_background_mini"
+            android:hint="   输入手机号"
+            android:inputType="number"
+
+            android:maxLength="11" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner_background_mini"
+                android:layout_weight="1"
+                android:hint="   输入验证码"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/get_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner_background_mini"
+                android:text="获取验证码"
+                android:gravity="center"
+                android:textSize="17dp"
+
+                android:textColor="@color/dodgerblue"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="立即登录"
+            android:enabled="false"
+            android:gravity="center"
+            android:background="@drawable/bluebck"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</LinearLayout>
